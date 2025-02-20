@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Cinzel', sans-serif;
-    background-image: url();
+    background-image: url(images/wood-texture.jpg);
   }
  
   .plans {
@@ -28,6 +28,7 @@ body {
     width: 160px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
  
   .plan h3 {
@@ -37,7 +38,7 @@ body {
   }
  
   .plan p {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     margin: 0;
   }
@@ -47,7 +48,7 @@ body {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom: 1px solid #000;
-    height: 40px;
+    height: 50px;
     width:100%;
     display: flex;
     justify-content: center;
@@ -63,12 +64,15 @@ body {
   }
 
   .plan-picture{
-    background-image: url();
+    border-bottom: 1px solid #000;
+    height: 105px;
+    min-height: 85px;
+    width:100%;
     background-size: contain;
     background-position: center;
-    background-repeat: no;
-    border-bottom: 1px solid #000;
-    height: 100px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    display: flex;
   }
 
   .board-and-resources{
@@ -142,6 +146,68 @@ body {
 
   .glass{
     background-color: #559cc8;
+  }
+
+  .stone{
+    background-color: #b4a582;
+  }
+
+  .wood{
+    background-color: #5a3c1e;
+  }
+
+  .plan-layout{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 5px;
+  }
+
+  .three-column{
+    grid-template-columns: auto auto auto;
+  }
+
+  .layout-clear{
+    height: 20px;
+    width:20px;
+  }
+
+  .layout{
+    height: 20px;
+    width:20px;
+    border: 1px solid #f3ebe0;
+  }
+
+  .cottage-image{
+    background-image: url(images/cottage-image.webp);
+  }
+
+  .farm-image{
+    background-image: url(images/farm-image.png);
+    background-size: cover;
+  }
+
+  .chapel-image{
+    background-image: url(images/chapel-image.png);
+  }
+
+  .market-image{
+    background-image: url(images/market-image.png);
+  }
+
+  .trading-post-image{
+    background-image: url(images/trading-post-image.png);
+  }
+
+  .tavern-image{
+    background-image: url(images/tavern-image.png);
+  }
+
+  .well-image{
+    background-image: url(images/well-image.png);
+  }
+
+  .cathedral-image{
+    background-image: url(images/cathedral-image.png);
   }
  
   .selectable:hover {
